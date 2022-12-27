@@ -1,5 +1,6 @@
 <template>
-About Page
+<div class="mt-5 mb-5 p-2">About Page</div>
+
 </template>
 
 <script>

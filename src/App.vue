@@ -4,9 +4,11 @@ import {RouterLink, RouterView} from 'vue-router'
 
 <template>
 
-  <nav class="p-4 mb-4">
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
+  <nav>
+    <ul class="flex">
+      <li class="p-2"> <RouterLink to="/">Home</RouterLink></li>
+      <li class="p-2"><RouterLink to="/about">About</RouterLink></li>
+    </ul>    
   </nav>
   <hr>
 

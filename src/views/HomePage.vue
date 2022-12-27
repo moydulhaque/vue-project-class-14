@@ -1,9 +1,13 @@
 <template>
-  <button @click="addPost">Add Post</button>
-  <br>
+  <div class="mt-5 mb-5 p-2">
+    <button class="border rounded-md bg-orange-600 text-white p-2" @click="addPost">Add Post</button>
+
+  </div>
+  
 <!--  fav count: {{ favCount }}<br>-->
 <!--  Un Fav Count: {{ unFavCount}}-->
-  <h1>All</h1>
+<div class="mt-5 mb-5 p-2">  
+<h1 class="text-2xl mb-2 underline">All Posts</h1>
   <ul>
     <single-post
         style="margin-bottom: 10px"
@@ -15,7 +19,7 @@
     />
   </ul>
   <br>
-  <h1>Favs</h1>
+  <h1 class="text-2xl mb-2 underline">Favs</h1>
   <ul>
     <single-post
         style="margin-bottom: 10px"
@@ -27,7 +31,7 @@
     />
   </ul>
   <br>
-  <h1>UnFavs</h1>
+  <h1 class="text-2xl mb-2 underline">UnFavs</h1>
   <ul>
     <single-post
         style="margin-bottom: 10px"
@@ -38,6 +42,7 @@
         @fav="handleFav"
     />
   </ul>
+</div>
 </template>
 
 <script>
@@ -101,6 +106,6 @@ export default {
 
 <style scoped>
 h1 {
-  color: green;
+  color: rgb(4, 55, 142);
 }
 </style>
